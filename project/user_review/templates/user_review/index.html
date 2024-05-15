@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            color: #d32f2f;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+    </style>
 </head>
-    <body>
-        <a href="{% url 'core:index' %}">INICIO</a>
-        <a href="{% url 'review:review_pelicula' %}">Make a Movie Review</a>
-        <a href="{% url 'review:review_libro' %}">Make a Book Review</a>
-        <a href="{% url 'review:lista_reviews_peliculas' %}">Movie Reviews</a>
-        <a href="{% url 'review:lista_reviews_libros' %}">Book Reviews</a>
-    </body>
+<body>
+    <a href="{% url 'core:index' %}">INICIO</a>
+    <a href="{% url 'review:review_pelicula' %}">Make a Movie Review</a>
+    <a href="{% url 'review:review_libro' %}">Make a Book Review</a>
+    <a href="{% url 'review:lista_reviews_peliculas' %}">Movie Reviews</a>
+    <a href="{% url 'review:lista_reviews_libros' %}">Book Reviews</a>
+</body>
 </html>
