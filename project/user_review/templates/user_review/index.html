@@ -9,5 +9,19 @@
     <a href="{% url 'core:index' %}">INICIO</a>
     <a href="{% url 'review:review_pelicula' %}">Movie Review</a>
     <a href="{% url 'review:review_libro' %}">Book Review</a>
+
+    <h2>Reseñas de Libros</h2>
+    <ul>
+        {% for review in book_reviews %}
+            <li>{{ review.titulo }} - {{ review.descripcion }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Reseñas de Peliculas</h2>
+    <ul>
+        {% for review in movie_reviews %}
+            <li>{{ review.titulo }} - {{ review.descripcion }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
