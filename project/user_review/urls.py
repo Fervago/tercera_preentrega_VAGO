@@ -5,8 +5,9 @@ app_name = "review"
 
 urlpatterns = [
     path("", views.index, name="index"),
+    path("reviews/movie/", views.buscar_reviews_peliculas, name="lista_reviews_peliculas"),
+     path("reviews/book/", views.buscar_reviews_libros, name="lista_reviews_libros"),
     path("user/", views.insertar_user, name="insertar_user"),
-    path('insertar_libro/', views.review_libro, name='review_libro'),
-    path('insertar_pelicula/', views.review_pelicula, name='review_pelicula'),
-    path('insertar_usuario/', views.insertar_usuario, name='insertar_usuario'),
+    path('add/book/', views.review_libro, name='review_libro'),
+    path('add/movie/', views.review_pelicula, name='review_pelicula'),
 ]
