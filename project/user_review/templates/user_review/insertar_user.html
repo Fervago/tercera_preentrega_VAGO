@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,3 +51,25 @@
     </form>
 </body>
 </html>
+=======
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Usuario
+{% endblock title %}
+{% block content %}
+<style>
+    body {
+        background-color: rgba(42, 40, 43, 0.813)
+    }
+</style>
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <button type="submit">Guardar</button>
+</form>
+{% endblock content %}
+
+>>>>>>> prueba

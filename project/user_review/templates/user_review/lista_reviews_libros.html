@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,3 +32,27 @@
     </ul>
 </body>
 </html>
+=======
+{% extends "core/base.html" %}
+
+{% block title %}
+    Reseñas de Libros
+{% endblock title %}
+
+{% block content %}
+<style>
+    body {
+        background-color: rgba(42, 40, 43, 0.813); /* Establece el fondo a naranja */
+    }
+    
+    li {
+        color: white; /* Establece el color de las letras a blanco */
+    }
+</style>
+<ul>
+    {% for review in book_reviews %}
+        <li>{{ review.titulo }} - {{ review.reseña }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
+>>>>>>> prueba
