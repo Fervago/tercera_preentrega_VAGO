@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Reseñas de Libros</h2>
-    <ul>
-        {% for review in book_reviews %}
-            <li>{{ review.titulo }} - {{ review.reseña }}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+{% extends "core/base.html" %}
+
+{% block title %}
+    Reseñas de Libros
+{% endblock title %}
+
+{% block content %}
+<style>
+    body {
+        background-color: rgba(42, 40, 43, 0.813); /* Establece el fondo a naranja */
+    }
+    
+    li {
+        color: white; /* Establece el color de las letras a blanco */
+    }
+</style>
+<ul>
+    {% for review in book_reviews %}
+        <li>{{ review.titulo }} - {{ review.reseña }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}

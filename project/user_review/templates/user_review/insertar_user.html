@@ -1,18 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insertar Usuario</title>
-</head>
-<body>
-    <h1>Usuario</h1>
-    <form method="post">
-        {% csrf_token %}
-        <table>
-            {{ form.as_table }}
-        </table>
-        <button type="submit">Guardar</button>
-    </form>
-</body>
-</html>
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Usuario
+{% endblock title %}
+{% block content %}
+<style>
+    body {
+        background-color: rgba(42, 40, 43, 0.813)
+    }
+</style>
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <button type="submit">Guardar</button>
+</form>
+{% endblock content %}
+
