@@ -1,10 +1,11 @@
 # Nombre del Proyecto
 
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
+
     ReviewSphere
 
->>>>>>> prueba
+> > > > > > > prueba
+
 ## Explicación breve del proyecto en cuanto al servicio
 
     Pagina web en la cual se pueden leer y publicar resenas.
@@ -45,3 +46,7 @@ Las plantillas son archivos HTML que facilitan la presentación de datos en la i
 ## Problemas conocidos
 
     El ux no es el optimo.
+
+## Mala practica
+
+    Se publico en entorno virtual.
