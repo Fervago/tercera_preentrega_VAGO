@@ -1,14 +1,15 @@
 from django.db import models
 
+
 class Libro(models.Model):
     titulo = models.CharField(max_length=100, default='Desconocido')
-    autor = models.CharField(max_length=100, default='Autor Desconocido')
+    autor = models.CharField(max_length=100, default='Desconocido')
     reseña = models.TextField(null=True)
 
 
 class Pelicula(models.Model):
     titulo = models.CharField(max_length=100, default='Desconocido')
-    director = models.CharField(max_length=100, default='Director Desconocido')
+    director = models.CharField(max_length=100, default='Desconocido')
     reseña = models.TextField(null=True)
 
 

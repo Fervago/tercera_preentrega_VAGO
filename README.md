@@ -1,10 +1,6 @@
 # Nombre del Proyecto
 
-# <<<<<<< HEAD
-
     ReviewSphere
-
-> > > > > > > prueba
 
 ## Explicación breve del proyecto en cuanto al servicio
 
